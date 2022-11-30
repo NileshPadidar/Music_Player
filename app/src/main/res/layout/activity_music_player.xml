@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicPlayerActivity">
+
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="14dp"
+        android:layout_marginEnd="22dp"
+        android:layout_toEndOf="@+id/ivBack"
+        android:gravity="center_horizontal"
+        android:maxLines="3"
+        android:paddingVertical="4dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginEnd="22dp"
+        android:layout_toEndOf="@+id/ivBack"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivMusicBig"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginVertical="20dp"
+        android:layout_above="@+id/rvControl"
+        android:layout_centerInParent="true"
+        android:src="@drawable/music" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvControl"
+        android:padding="40dp"
+        android:layout_alignParentBottom="true">
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/black"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/seekBar"
+            android:text="0:00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="14dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="14dp"
+            android:gravity="center_horizontal"
+            android:text="3:00"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tvTotalTime">
+
+
+            <ImageView
+                android:id="@+id/ivPrev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                android:src="@drawable/skip_next" />
+
+            <ImageView
+                android:id="@+id/ivPause"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:rotation="180"
+                android:layout_weight="1"
+                android:src="@drawable/pause_circle" />
+
+
+            <ImageView
+                android:id="@+id/ivNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/skip_next" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

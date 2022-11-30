@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Nilesh Patidar/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/baseline_stop.xml" value="0.165" />
+        <entry key="..\:/Users/Nilesh Patidar/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/ic_music.xml" value="0.165" />
+        <entry key="..\:/Users/Nilesh Patidar/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/input_custom.xml" value="0.165" />
+        <entry key="..\:/Users/Nilesh Patidar/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/llbottom_bg.xml" value="0.165" />
+        <entry key="..\:/Users/Nilesh Patidar/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/music_bg.xml" value="0.165" />
+        <entry key="..\:/Users/Nilesh Patidar/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/drawable/skip_next.xml" value="0.165" />
+        <entry key="..\:/Users/Nilesh Patidar/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nilesh Patidar/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/layout/activity_music_player.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Nilesh Patidar/AndroidStudioProjects/MyMusicPlayer/app/src/main/res/layout/item_music.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

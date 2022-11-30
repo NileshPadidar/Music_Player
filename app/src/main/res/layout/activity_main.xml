@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:id="@+id/llTop"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/all_songs"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:id="@+id/searchViewId"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/input_custom"
+            android:iconifiedByDefault="false"
+            android:layout_marginStart="10dp"
+            android:queryBackground="@null"
+            android:queryHint="Search your Song..."
+            android:singleLine="true"
+            android:textColorHint="#878383"
+             />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/tv_noSong"
+        android:visibility="gone"
+        android:text="@string/no_song_found"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAllMusic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/llTop"
+        android:nestedScrollingEnabled="true"
+        android:paddingBottom="10dp" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/llbottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp"
+        android:paddingHorizontal="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/ivSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/music_bg"
+            android:padding="4dp"
+            android:src="@drawable/ic_music"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:id="@+id/tvSongTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingEnd="6dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
